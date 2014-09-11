@@ -1,6 +1,6 @@
 # Mock Editor
 
-Mock Editor 是一个基于 Mock.js 语法的编辑器。
+Mock Editor 是一个基于 Mock.js 语法的 Mock 模板编辑器。
 
 
 ## 下载
