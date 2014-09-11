@@ -5,7 +5,9 @@
     "window": {
         "toolbar": false,
         "min_width": 800,
-        "min_heigh": 600,
+        "min_heigh": 400,
+        "width": 1000,
+        "height": 600,
         "icon": "logo.png"
     }
 }
