@@ -64,6 +64,8 @@
 
     // bind gui event
     gui.App.on('open', function(path) {
+        filePath = path
+        readFileIntoEditor(filePath)
     })
 
 
@@ -78,10 +80,28 @@
     }
 
     function writeEditorToFile(path) {
-        fs.writeFile(path, Editor.tplEditor.getValue(), function(err) {
+        path = exportPath(path)
+
+        fs.writeFile(path.mock, Editor.tplEditor.getValue(), function(err) {
+            if (err) {
+                return alert('保存失败')
+            }
+        })
+
+        fs.writeFile(path.json, Editor.dataEditor.getValue(), function(err) {
             if (err) {
                 return alert('保存失败')
             }
         })
     }
+
+    function exportPath(path) {
+        path = path.replace(/\.mock$/, '')
+
+        return {
+            mock: path + '.mock',
+            json: path + '.json'
+        }
+    }
+
 }())
