@@ -1,0 +1,11 @@
+{
+    "name": "MockEditor",
+    "version": "0.0.1",
+    "main": "index.html",
+    "window": {
+        "toolbar": false,
+        "min_width": 800,
+        "min_heigh": 600,
+        "icon": "logo.png"
+    }
+}

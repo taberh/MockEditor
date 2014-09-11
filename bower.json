@@ -1,0 +1,21 @@
+{
+    "name": "MockEditor",
+    "version": "0.0.1",
+    "homepage": "https://github.com/taberh/MockEditor",
+    "authors": [
+        "taberh <taber.huang@gmail.com>"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components"
+    ],
+    "dependencies": {
+        "jquery": "~2.1.1",
+        "bootstrap": "",
+        "codemirror": "~3.20.0",
+        "highlightjs": "~8.0.0",
+        "js-beautify": "~1.5.1"
+    }
+}
